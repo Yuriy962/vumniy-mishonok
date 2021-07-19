@@ -1,0 +1,58 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
+
+*{
+ box-sizing: border-box;
+ font-family: 'Nunito';
+ font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+
+body{
+	font-weight: normal;
+	position: relative;
+	font-size: 14px;
+	background-color: #E6E6E6;
+}
+
+/*end fancybox*/
+@import "colors";
+@import "buttons";
+@import "bootstrap";
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import 'blocks/header';
+@import 'blocks/promo';
+
+@import 'blocks/footer';
+
+@media (min-width: 1360px){
+	.container{
+		max-width: 1360px;
+	}
+}
+
+.d-grid {
+	display: grid !important;
+}
+
+input{
+	&:focus{
+		border: none;
+		outline: none;
+	}
+}
+button{
+	border: none;
+	&:focus{
+		border: none;
+		outline: none;
+	}
+}
