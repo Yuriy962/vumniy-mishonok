@@ -6,6 +6,10 @@
 	@return m#{i}n(#{$numbers});
 }
 
+@import "colors";
+@import "bootstrap";
+
+
 *{
  box-sizing: border-box;
  font-family: 'Nunito';
@@ -21,12 +25,21 @@ body{
 	position: relative;
 	font-size: 14px;
 	background-color: #E6E6E6;
+	color: $text-standart;
+}
+
+.phone {
+    font-weight: 600;
+    color: $text-standart;
+}
+@media (max-width: 1360px){
+    .phone {
+        font-size: 18px;
+    }   
 }
 
 /*end fancybox*/
-@import "colors";
 @import "buttons";
-@import "bootstrap";
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
 @import 'blocks/promo';
@@ -55,4 +68,17 @@ button{
 		border: none;
 		outline: none;
 	}
+}
+
+.title{
+	font-family: 'Balsamiq Sans';
+	font-weight: 700;
+	&-big{
+		font-size: 68px;
+		line-height: 74px;
+	}
+}
+.subtitle{
+	font-size: 27px;
+	line-height: 40px;
 }

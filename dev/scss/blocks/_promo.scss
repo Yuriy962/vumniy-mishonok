@@ -1,4 +1,21 @@
 .promo{
     min-height: 958px;
-    background: url('../img/promo/promo-bg.jpg') no-repeat;
+    padding: 132px 0 141px;
+    background: url('../img/promo/promo-bg.jpg');
+    background-size: cover;
+    &__content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+}
+@media (min-width: 1700px){
+    .promo{
+        background-size: 100%;
+    }
+}
+@media (max-width: 768px){
+    .promo {
+        min-height: 486px;
+    }
 }
