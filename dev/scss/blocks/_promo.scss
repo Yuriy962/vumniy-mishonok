@@ -1,6 +1,6 @@
 .promo{
-    min-height: 958px;
-    padding: 132px 0 141px;
+    min-height: 828px;
+    padding: 132px 0 0;
     background: url('../img/promo/promo-bg.jpg');
     background-size: cover;
     &__content{
@@ -8,14 +8,130 @@
         grid-template-columns: 50% 50%;
         align-items: center;
     }
+    &__img{
+        img{
+            width: 100%;
+        }
+    }
 }
 @media (min-width: 1700px){
     .promo{
         background-size: 100%;
     }
 }
+@media (max-width: 992px) {
+    .promo{
+        min-height: 500px;
+        padding: 162px 0 51px;
+        &__title{
+            margin-bottom: 12px;
+        }
+    }
+}
 @media (max-width: 768px){
     .promo {
         min-height: 486px;
+        &__content{
+            grid-template-columns: 100%;
+        }
+        &__info{
+            margin-bottom: 26px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .promo {
+        padding-top: 126px;
+        &__info{
+            margin-bottom: 26px;
+        }
+        &__title{
+            margin-bottom: 10px;
+        }
+        &__content{
+            padding: 0 15px;
+        }
+    }
+}
+
+.block-in-front{
+    @media (max-width: 992px){
+        .form{
+            .title{
+                margin-bottom: 15px;
+            }
+            .subtitle{
+                margin-bottom: 27px;
+            }
+            .form__input{
+                margin-bottom: 30px;
+            }
+            .btn{
+                margin-bottom: 27px;
+            }
+            .form__input{
+                width: auto;
+            }
+        }
+    }
+}
+
+.bg-darkblue{
+    background-color: $bg-darkblue;
+}
+.bg-white{
+    background-color: #fff;
+}
+
+.form{
+    border-radius: 15px;
+    padding: 30px 14px 35px;
+    &-infront{
+        position: absolute;
+        width: calc( 100% - 30px );
+        top: 0;
+        left: 15px;
+        right: 0;
+        transform: translateY(-70%);
+    }
+    &__input{
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        border-bottom: 2px solid;
+        &-dark{
+            border-color: #6F92CA;
+            color: $blue-light;
+        }
+        &:focus{
+            background: transparent;
+        }
+    }
+}
+@media (max-width: 1360px){
+    .form {
+        padding: 25px 10px;
+        &__title{
+            display: inline-block;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        &__subtitle{
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .form{
+        &-infront{
+            transform: translateY(-10%);
+        }
+    }
+}
+@media (max-width: 576px){
+    .form{
+        &__title{
+            font-size: 22px;
+        }
     }
 }

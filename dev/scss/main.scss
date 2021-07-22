@@ -38,11 +38,71 @@ body{
     }   
 }
 
+.title{
+	font-family: 'Balsamiq Sans';
+	font-size: 54px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	&-big{
+		font-size: 68px;
+		line-height: 74px;
+		text-align: left;
+	}
+	&-small{
+		font-size: 28px;
+		line-height: 30px;
+		font-weight: normal;
+		text-align: left;
+	}
+}
+.subtitle{
+	font-size: 27px;
+	line-height: 40px;
+	&-small{
+		font-size: 19px;
+		line-height: 26px;
+	}
+}
+.title,.subtitle{
+	display: inline-block;
+}
+@media (max-width: 1360px){
+	.title{
+		&-big{
+			font-size: 47px;
+			line-height: 57px;
+		}
+	}
+}
+@media (max-width: 992px){
+	.title{
+		&-big{
+			font-size: 37px;
+		}
+	}
+	.subtitle{
+		font-size: 19px;
+		line-height: 26px;
+	}
+}
+@media (max-width: 576px){
+	.title{
+		&-big{
+			font-size: 28.5px;
+			line-height: 35px;
+		}
+	}
+}
+
 /*end fancybox*/
 @import "buttons";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
 @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/advantages';
+@import 'blocks/learning';
 
 @import 'blocks/footer';
 
@@ -57,6 +117,7 @@ body{
 }
 
 input{
+	border: none;
 	&:focus{
 		border: none;
 		outline: none;
@@ -68,17 +129,4 @@ button{
 		border: none;
 		outline: none;
 	}
-}
-
-.title{
-	font-family: 'Balsamiq Sans';
-	font-weight: 700;
-	&-big{
-		font-size: 68px;
-		line-height: 74px;
-	}
-}
-.subtitle{
-	font-size: 27px;
-	line-height: 40px;
 }
