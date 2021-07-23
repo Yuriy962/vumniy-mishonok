@@ -3,7 +3,7 @@
         padding: 84px 0 119px;
     }
     &__title{
-        margin-bottom: 60px;
+        margin-bottom: 48px;
     }
     &__age-text{
         font-size: 21px;
@@ -15,8 +15,6 @@
         padding-left: 0;
     }
     &__tab{
-        border: 3px solid;
-        border-color: transparent;
         background: #FFFFFF;
         border-radius: 50px;
         box-shadow: 0px 4px 35px rgba(213, 213, 213, 0.35);
@@ -28,6 +26,15 @@
         font-size: 15px;
         font-weight: 700;
         text-transform: uppercase;
+
+        &--content{
+            align-items: center;
+        }
+    }
+
+    &__aside{
+        border-radius: 15px 0px 0px 15px;
+        max-width: 287px;
     }
 }
 
@@ -37,12 +44,54 @@
         justify-content: space-between;
         list-style: none;
         padding-left: 0;
+        margin: 0;
     }
 }
 .tab{
+    border: 3px solid;
+    border-color: transparent;
     cursor: pointer;
     white-space: nowrap;
     &--active{
         border-color: #F4BA37;
+    }
+    &__title{
+        font-size: 28px;
+        line-height: 39px;
+        margin-bottom: 23px;
+    }
+    &__info{
+        font-size: 19px;
+        padding: 10px 30px 10px 58px;
+        p{
+            margin-bottom: 1.5rem;
+        }
+    }
+    &-content{
+        display: none;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 35px rgba(213, 213, 213, 0.35);
+        border-radius: 15px;
+        &--active {
+            display: flex;
+        }
+    }
+    &__subtabs{
+        color: #fff;
+        list-style: none;
+        padding-left: 0;
+    }
+    &__subtab{
+        font-family: Balsamiq Sans;
+        font-weight: bold;
+        font-size: 21px;
+        padding: 26px 30px;
+        border-bottom: 2px solid rgba(246,246,246, 0.2);
+        &:last-child{
+            border-color: transparent;
+        }
+        &--active{
+            background-color: #F4BA37;
+        }
     }
 }

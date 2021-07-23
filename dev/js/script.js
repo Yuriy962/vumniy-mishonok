@@ -8,24 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// let tabs = document.querySelectorAll('.tab');
-// for(let i = 0; i < tabs.length; i++){
-//     tabs[i].addEventListener('click', () => {
-//         clearTabs();
-//         this.classList.add('.tab--active');
-//     });
-// }
-
-// function getActiveClassForTab(activeTav = 0) {
-    
-// }
-
-// function clearTabs() {
-//     tabs.forEach((tab) => {
-//         tab.classList.remove('.tab--active');
-//     })
-// }
-
 $(window).on('load', () => {
     $('.slider').slick({
         speed: 300,

@@ -12,29 +12,62 @@
                     <div class="col-lg-9">
                         <nav class="tabs">
                             <ul class="tabs__list learning__tabs">
-                                <li class="tab learning__tab">3-4 года</li>
-                                <li class="tab learning__tab">4-5 лет</li>
-                                <li class="tab learning__tab">5-6 лет</li>
-                                <li class="tab learning__tab tab--active">Подготовка к школе</li>
+                                <li class="tab learning__tab" data-tab="3-4-years">3-4 года</li>
+                                <li class="tab learning__tab" data-tab="4-5-years">4-5 лет</li>
+                                <li class="tab learning__tab" data-tab="5-6-years">5-6 лет</li>
+                                <li class="tab tab--active learning__tab" data-tab="preschool">Подготовка к школе</li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </header>
             <div class="learning__content">
-                <article class="learning__tab--content">
-                    <aside></aside>
+                <article class="tab-content learning__tab--content" data-tab-content="3-4-years">
+                    <aside>
+
+                    </aside>
                 </article>
-                <article class="learning__tab--content">
+                <article class="tab-content learning__tab--content" data-tab-content="4-5-years">
                     2
                 </article>
-                <article class="learning__tab--content">
+                <article class="tab-content learning__tab--content" data-tab-content="5-6-years">
                     3
                 </article>
-                <article class="learning__tab--content">
-                    4
+                <article class="tab-content tab-content--active  learning__tab--content row" data-tab-content="preschool">
+                    <aside class="col-lg-3 pl-0 pr-0 learning__aside bg-darkblue">
+                        <ul class="tabs tab__subtabs">
+                            <li class="tab tab__subtab">
+                                Логопедия - чтение
+                            </li>
+                            <li class="tab tab__subtab tab__subtab--active">
+                                Озорная арифметика
+                            </li>
+                            <li class="tab tab__subtab">
+                                Мир на ладошке
+                            </li>
+                            <li class="tab tab__subtab">
+                                Развитие речи
+                            </li>
+                            <li class="tab tab__subtab learning__subtab">
+                                Английский язык
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="col-lg-6">
+                        <div class="learning__info tab__info">
+                            <h4 class="tab__title">
+                                Чем занимаемся во время подготовки к школе на озорной арифметике
+                            </h4>
+                            <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
+                            <p>Bis dat qui cito dat. Bonorum possessio.</p>
+                            <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 learning__img">
+                        <img src="img/learning/tab-1.png" alt="mouse">
+                    </div>
                 </article>
-                <article class="learning__tab--content">
+                <article class="tab-content  learning__tab--content" data-tab-content="">
                     5
                 </article>
             </div>
