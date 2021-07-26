@@ -52,7 +52,7 @@ body{
 	&-small{
 		font-size: 28px;
 		line-height: 30px;
-		font-weight: normal;
+		font-weight: 700;
 		text-align: left;
 	}
 }
@@ -86,11 +86,181 @@ body{
 		line-height: 26px;
 	}
 }
+@media (max-width: 768px){
+	.title{
+		&-small{
+			font-size: 29px;
+		}
+	}
+}
 @media (max-width: 576px){
 	.title{
 		&-big{
 			font-size: 28.5px;
 			line-height: 35px;
+		}
+	}
+}
+
+.form-bg{
+	&-white{
+		background: #FFFFFF;
+	}
+}
+
+.block-in-front {
+	@media (max-width: 992px) {
+		.form {
+			.title {
+				margin-bottom: 15px;
+			}
+
+			.subtitle {
+				margin-bottom: 27px;
+			}
+
+			.form__input {
+				margin-bottom: 30px;
+			}
+
+			.btn {
+				margin-bottom: 27px;
+			}
+
+			.form__input {
+				width: auto;
+			}
+		}
+	}
+}
+
+.bg-darkblue {
+	background-color: $bg-darkblue;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.form {
+	border-radius: 15px;
+	padding: 30px 14px 35px;
+
+	&-infront {
+		position: absolute;
+		width: calc(100% - 30px);
+		top: 0;
+		left: 15px;
+		right: 0;
+		transform: translateY(-70%);
+	}
+
+	&__input {
+		background: transparent;
+		border: none;
+		font-size: 20px;
+		border-bottom: 2px solid;
+		padding-bottom: 10px;
+
+		&-dark {
+			border-color: #6F92CA;
+			color: $blue-light;
+		}
+
+		&:focus {
+			background: transparent;
+		}
+	}
+
+	&__select {
+		border-color: #6F92CA;
+		color: $text-standart;
+
+		option {
+			color: #1C4B9B;
+		}
+	}
+
+	&__checkbox {
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 35px;
+		input{
+			width: 28px;
+			height: 28px;
+			margin-right: 14px;
+		}
+	}
+}
+
+@media (max-width: 1360px) {
+	.form {
+		padding: 25px 10px;
+
+		&__title {
+			display: inline-block;
+			font-size: 25px;
+			margin-bottom: 5px;
+		}
+
+		&__subtitle {
+			font-size: 15px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.form {
+		&-infront {
+			transform: translateY(-10%);
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.form {
+		&__title {
+			font-size: 22px;
+		}
+		&__checkbox{
+			font-size: 17px;
+			input{
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+}
+
+.age-text {
+	font-family: Balsamiq Sans;
+	font-size: 21px;
+	margin-bottom: 20px;
+	font-weight: 700;
+	@media (max-width: 576px){
+		font-size: 18px;
+	}
+}
+
+.section{
+	&-title{
+		color: $text-standart;
+		&-small{
+			font-size: 28px;
+		}
+	}
+	&-text{
+		font-size: 19px;
+		color: $text-standart;
+	}
+}
+@media (max-width: 576px){
+	.section{
+		&-title{
+			&-small{
+				font-size: 22px;
+			}
 		}
 	}
 }
@@ -104,6 +274,8 @@ body{
 @import 'blocks/advantages';
 @import 'blocks/learning';
 @import 'blocks/manual';
+@import 'blocks/result';
+@import 'blocks/teachers';
 
 @import 'blocks/footer';
 

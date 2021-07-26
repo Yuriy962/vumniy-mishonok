@@ -1,16 +1,58 @@
-<article class="manual bg-darkblue">
-    <div class="manual__inner ">
-        <div class="container">
-            <h2 class="title text-white">Мы разработали собственный учебник</h2>
+<article class="manual">
+    <div class="manual__inner position-relative">
+        <img class="position-absolute manual__left manual__cloud" src="img/manual/left.png" alt="clouds">
+        <img class="position-absolute manual__right manual__cloud" src="img/manual/right.png" alt="clouds">
+        <div class="container position-relative manual__content">
+            <h2 class="title text-white manual__title">Мы разработали собственный учебник</h2>
             <div class="row">
-                <div class="col-lg-8 offset-lg-4">
+                <div class="col-xl-8 offset-xl-4">
                     <div class="manual__text text-white">
                         <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
                         <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
                     </div>
-                    <div class="manual__form">
-    
-                    </div>
+                    <form class="manual__form form-bg-white manual__form" method="POST">
+                        <h3 class="title-small form__title manual__title">Получите ознакомительный фрагмент учебника,
+                            на удобный для вас мессенджер</h3>
+                        <div class="row form-row">
+                            <div class="col-lg-4 col-md-6 d-flex flex-column">
+                                <select class="form__input form__select manual__select" name="age" id="age">
+                                    <option value="1" selected>Возраст ребенка</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input class="btn manual__btn d-none d-lg-block" type="submit"
+                                    value="Получить фрагмент">
+                            </div>
+                            <div class="col-lg-4 col-md-6 d-flex flex-column">
+                                <input class="form__input form__input-dark manual__phone" type="tel" name="tel" id="phone" placeholder="+7 (000) 000-00-00">
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-flex flex-column">
+                                    <label class="form__checkbox">
+                                        <input type="checkbox" name="radio-1" id="telegram">
+                                        <span>Telegram</span>
+                                    </label>
+                                    <label class="form__checkbox">
+                                        <input type="checkbox" name="radio-1" id="viber">
+                                        <span>Viber</span>
+                                    </label>
+                                    <label class="form__checkbox">
+                                        <input type="checkbox" name="radio-1" id="whatsapp">
+                                        <span>WhatsApp</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-block d-lg-none">
+                                <input class="btn manual__btn" type="submit" value="Получить фрагмент">
+                            </div>
+                            <div class="col-12">
+                                <label class="manual__policy">
+                                    <input type="checkbox" name="policy" id="policy">
+                                    <span>Соглашаюсь на обработку персональных данных</span>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

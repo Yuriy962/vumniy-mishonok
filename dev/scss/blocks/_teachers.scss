@@ -1,0 +1,13 @@
+.teachers{
+    min-height: 946px;
+    background: url(../img/teachers/teachers__bg.jpg) no-repeat;
+    &__inner{
+        padding: 90px 0 100px;
+    }
+    &__round{
+        border-radius: 50%;
+        max-width: 246px;
+        max-height: 240px;
+        border-image: ulr('../img/teachers/round.png') 70px;
+    }
+}

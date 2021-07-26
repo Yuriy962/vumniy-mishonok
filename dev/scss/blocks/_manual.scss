@@ -1,0 +1,126 @@
+.manual{
+    &__inner{
+        min-height: 910px;
+        padding: 106px 0 93px;
+        background-color: #3654A8;
+        overflow: hidden;
+        background-image: url(../img/manual/manual.jpg);
+        background-repeat: no-repeat;
+    }
+    &__content {
+        z-index: 1;
+    }
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__text{
+        margin-top: 35px;
+        font-size: 19px;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    &__form{
+		box-shadow: 0px 4px 35px rgba(20, 66, 143, 0.3);
+        border-radius: 15px;
+        padding: 47px 43px 50px;
+        margin-top: 40px;
+    }
+    &__phone{
+        width: 100%;
+    }
+    &__btn{
+        margin-top: 35px;
+        padding: 20px 25px;
+    }
+    &__policy{
+        margin-top: 0;
+        font-size: 15px;
+    }
+    &__cloud{
+        z-index: 1;
+    }
+    &__left{
+        left: 0;
+    }
+    &__right{
+        right: 0;
+    }
+}
+@media (max-width: 1200px){
+    .manual{
+
+    }
+}
+@media (max-width: 992px){
+    .manual{
+        &__inner{
+            padding: 50px 0 60px;
+        }
+        &__select{
+            margin-bottom: 35px;
+        }
+        &__btn {
+            margin-top: 0;
+            margin-bottom: 35px;
+            padding: 20px 25px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .manual{
+        &__phone{
+            margin-bottom: 35px;
+        }
+        &__inner {
+            background-image: url(../img/manual/manual.jpg);
+            background-repeat: no-repeat;
+            background-size: 900px;
+            background-position: 23% 15%;
+        }
+        &__form{
+            margin-top: 360px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .manual{
+        &__title{
+            font-size: 29px;
+        }
+        &__text{
+            font-size: 15px;
+            margin-top: 0;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .manual {
+        &__inner{
+            background-size: 600px;
+            background-position: 23% 15%;
+        }
+        &__left{
+            bottom: 0;
+        }
+        &__form{
+            padding: 27px 23px 40px;
+            margin-top: 260px;
+        }
+        &__title{
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .manual {
+        &__inner {
+            background-position: 30% 24%;
+        }
+        &__form{
+            margin-top: 260px;
+        }
+    }
+}
