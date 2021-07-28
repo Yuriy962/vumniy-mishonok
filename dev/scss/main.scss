@@ -265,6 +265,74 @@ body{
 	}
 }
 
+.slick{
+    &-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px #CCD1DD;
+        font-size: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-svg{
+            height: 18px;
+        }
+        &-img{
+            stroke: #F4BA37; 
+            stroke-width: 3;
+			&--white{
+				stroke: white;
+			}
+        }
+        &--bottom{
+			top: auto;
+			bottom: -100px;
+		}
+        &:hover{
+            background: #F4B937;
+            box-shadow: 0px 2px 10px rgba(20, 66, 143, 0.3); 
+            .slick-arrow-img{
+                stroke: #fff;
+            } 
+        }
+		&--big{
+			width: 44px;
+			height: 44px;
+			&.slick-prev{
+				left: auto;
+				right: 130px;
+			}
+		}
+		&--dark{
+			background-color: #2E4FAA;
+		}
+		&--long{
+			height: 44px;
+			width: 89px;
+			border-radius: 50px;
+			&.slick-next{
+				right: 25px;
+				left: auto;
+			}
+		}
+		&--white{
+			background-color: #fff;
+		}
+    }
+    &-prev{
+        left: 0;
+    }
+    &-next{
+        right: 0;
+    }
+}
+
 /*end fancybox*/
 @import "buttons";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
