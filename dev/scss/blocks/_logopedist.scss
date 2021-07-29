@@ -1,0 +1,167 @@
+.logoped{
+    background: url(../img/logopedist/logoped-bg.jpg) center center/cover no-repeat;
+    &__inner{
+        padding: 88px 0 116px;
+    }
+    &__title{
+        margin-bottom: 48px;
+    }
+    &__content{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 35px rgba(213, 213, 213, 0.35);
+        border-radius: 15px;
+    }
+    &__list{
+        max-width: 430px;
+        border-radius: 15px 0 0 15px;
+        overflow: hidden;
+    }
+    &__item{
+        max-width: initial;
+        background-color: #2E4FAA;
+        color: #fff;
+        border-radius: 15px 0 0 15px;
+    }
+    &__info{
+        padding: 30px 55px 36px 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__price{
+        display: inline-block;
+        font-size: 19px;
+        margin-top: 15px;
+    }
+    &__text{
+        margin-top: 16px;
+    }
+    &__form{
+        padding: 30px 45px 35px;
+        border-radius: 15px;
+    }
+    &__btn{
+        padding: 10px 25px;
+    }
+
+    .slick-prev{
+        left: 18px;
+    }
+    .slick-next{
+        right: 18px;
+    }
+}
+@media (max-width: 1400px){
+    .logoped{
+        &__list{
+            max-width: 370px;
+        }
+        &__item{
+            max-width: 369px;
+        }
+        &__input{
+            width: 100%;
+            font-size: 17px;
+        }
+        &__btn{
+            font-size: 13px;
+        }
+        &__policy{
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .logoped{
+        &__input{
+            margin-bottom: 15px;
+        }
+        &__btn{
+            margin-bottom: 15px;
+        }
+        &__item{
+            padding: 35px 45px 50px;
+            box-shadow: none;
+        }
+        &__text{
+            font-size: 15px;
+        }
+        &__title-small{
+            font-size: 25px;
+        }
+        &__policy{
+            margin-top: 15px;
+        }
+        &__form{
+            padding: 35px 25px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .logoped{
+        &__title{
+            font-size: 29px;
+        }
+        &__content{
+            flex-direction: column;
+            background: transparent;
+            box-shadow: none;
+        }
+        &__info{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 35px rgba(213, 213, 213, 0.35);
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        &__list{
+            border-radius: 15px;
+            max-width: 100%;
+        }
+        &__item{
+            border-radius: 15px;
+            max-width: initial;
+        }
+        &__input{
+            width: auto;
+        }
+    }
+}
+@media (max-width: 768px){
+    .logoped{
+        &__inner{
+            padding: 60px 0 53px;
+        }
+        &__form{
+            padding: 25px;
+            &-title{
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+        }
+        &__btn{
+            padding: 20px 25px;
+            font-size: 15px;
+        }
+        &__info{
+            padding-right: 36px;
+        }
+        &__input{
+            font-size: 17px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 480px){
+    .logoped{
+        &__btn{
+            padding: 20px 15px;
+            font-size: 12px;
+            width: 100%;
+        }
+        &__form{
+            &-title{
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -46,8 +46,9 @@ $(window).on('load', () => {
         slidesToShow: 3,
         slidesToScroll: 3,
         adaptiveHeight: true,
+        infinite: true,
         prevArrow: 
-        '<button type="button" class="slick-arrow slick-arrow--bottom slick-arrow--big slick-arrow--dark slick-prev">' +
+        '<button type="button" class="slick-arrow slick-arrow--bottom slick-arrow--big slick-arrow--dark teachers-prev slick-prev">' +
             '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' + 
                 '<path class="slick-arrow-img slick-arrow-img--white" d="M10 16L3 9L10 2" stroke-linecap="round"/>' + 
             '</svg>' + 
@@ -76,5 +77,40 @@ $(window).on('load', () => {
                 }
             }
         ]
+    });
+
+    $('.logoped__list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        prevArrow: 
+        '<button type="button" class="slick-arrow slick-prev slick-arrow--big">' +
+            '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' + 
+                '<path class="slick-arrow-img" d="M10 16L3 9L10 2" stroke-linecap="round"/>' + 
+            '</svg>' + 
+        '</button>',
+        nextArrow: 
+        '<button type="button" class="slick-arrow slick-next slick-arrow--big">'+
+            '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path class="slick-arrow-img" d="M2 2L9 9L2 16" stroke-linecap="round"/>' +
+            '</svg>' +
+        '</button>'
+    });
+    $('.rooms__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        prevArrow: 
+        '<button type="button" class="slick-arrow slick-prev slick-arrow--big">' +
+            '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' + 
+                '<path class="slick-arrow-img" d="M10 16L3 9L10 2" stroke-linecap="round"/>' + 
+            '</svg>' + 
+        '</button>',
+        nextArrow: 
+        '<button type="button" class="slick-arrow slick-next slick-arrow--big">'+
+            '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                '<path class="slick-arrow-img" d="M2 2L9 9L2 16" stroke-linecap="round"/>' +
+            '</svg>' +
+        '</button>'
     });
 })

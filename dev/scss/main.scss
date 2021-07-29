@@ -55,6 +55,11 @@ body{
 		font-weight: 700;
 		text-align: left;
 	}
+	&-section{
+		font-family: 'Balsamiq Sans';
+		font-size: 54px;
+		font-weight: bold;
+	}
 }
 .subtitle{
 	font-size: 27px;
@@ -73,12 +78,16 @@ body{
 			font-size: 47px;
 			line-height: 57px;
 		}
+		
 	}
 }
 @media (max-width: 992px){
 	.title{
 		&-big{
 			font-size: 37px;
+		}
+		&-section{
+			font-size: 54px;
 		}
 	}
 	.subtitle{
@@ -89,6 +98,9 @@ body{
 @media (max-width: 768px){
 	.title{
 		&-small{
+			font-size: 29px;
+		}
+		&-section{
 			font-size: 29px;
 		}
 	}
@@ -191,6 +203,10 @@ body{
 			height: 28px;
 			margin-right: 14px;
 		}
+	}
+
+	&--dashed{
+		border: 2px dashed #F4BA37
 	}
 }
 
@@ -301,13 +317,15 @@ body{
                 stroke: #fff;
             } 
         }
-		&--big{
-			width: 44px;
-			height: 44px;
+		&.teachers-prev{
 			&.slick-prev{
 				left: auto;
 				right: 130px;
 			}
+		}
+		&--big{
+			width: 44px;
+			height: 44px;
 		}
 		&--dark{
 			background-color: #2E4FAA;
@@ -344,6 +362,8 @@ body{
 @import 'blocks/manual';
 @import 'blocks/result';
 @import 'blocks/teachers';
+@import 'blocks/logopedist';
+@import 'blocks/rooms';
 
 @import 'blocks/footer';
 
