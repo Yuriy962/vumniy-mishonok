@@ -1,0 +1,82 @@
+.reviews{
+    background: url(../img/reviews/reviews-bg.jpg) center center/cover no-repeat;
+    &__inner{
+        padding: 105px 0 118px;
+    }
+    &__list{
+        margin-top: 70px;
+        margin-bottom: 55px;
+        box-shadow: 0px 4px 35px rgba(20, 66, 143, 0.3);
+    }
+    .slick-prev{
+        left: -20px;
+    }
+    .slick-next{
+        right: -25px;
+    }
+}
+
+.review{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 22px 60px 54px;
+    align-items: center;
+    &__image{
+        align-items: flex-start;
+    }
+    &__descr{
+       padding: 20px 0 0 33px; 
+    }
+    &__author,
+    &__subject{
+        font-weight: 700;
+    }
+    &__author{
+        font-size: 26px;
+        margin-bottom: 26px;
+    }
+    &__subject{
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 19px;
+    }
+}
+
+.teachers__round--review{
+    width: 180px;
+    height: 180px;
+}
+
+@media (max-width: 992px) {
+    .reviews{
+        &__inner{
+            padding: 65px 0 72px;
+        }
+        &__list{
+            margin-top: 37px;
+        }
+    }
+    .review{
+        padding: 25px 32px 40px;
+        flex-direction: column;
+        &__image{
+            align-self: start;
+            margin-bottom: 25px;
+        }
+        &__descr{
+            padding: 0;
+        }
+        &__author{
+            margin-bottom: 15px;
+        }
+        &__subject{
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 15px;
+        }
+    }
+}

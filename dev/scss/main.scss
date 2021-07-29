@@ -59,6 +59,7 @@ body{
 		font-family: 'Balsamiq Sans';
 		font-size: 54px;
 		font-weight: bold;
+		line-height: 61px;
 	}
 }
 .subtitle{
@@ -102,6 +103,7 @@ body{
 		}
 		&-section{
 			font-size: 29px;
+			line-height: 35px;
 		}
 	}
 }
@@ -152,6 +154,9 @@ body{
 
 .bg-white {
 	background-color: #fff;
+}
+.bg-block-clouds{
+	background: url(../img/text-blocks/clouds-for-text-block.jpg) center center/cover no-repeat;
 }
 
 .form {
@@ -364,6 +369,9 @@ body{
 @import 'blocks/teachers';
 @import 'blocks/logopedist';
 @import 'blocks/rooms';
+@import 'blocks/text-block';
+@import 'blocks/gallery';
+@import 'blocks/reviews';
 
 @import 'blocks/footer';
 
