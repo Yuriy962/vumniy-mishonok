@@ -215,6 +215,38 @@ body{
 	&--dashed{
 		border: 2px dashed #F4BA37
 	}
+
+	&-popup{
+		padding: 0;
+		&__title{
+			font-weight: bold;
+			font-size: 38px;
+			margin-bottom: 35px;
+		}
+		&__phone{
+			margin-bottom: 45px;
+		}
+		&__label{
+			margin-top: 40px;
+		}
+	}
+	@media (max-width: 480px){
+		&-popup{
+			padding: 30px;
+			&__title{
+				font-weight: bold;
+				font-size: 25px;
+				margin-bottom: 35px;
+			}
+			&__phone{
+				font-size: 18px;
+				margin-bottom: 30px;
+			}
+			&__label{
+				margin-top: 30px;
+			}
+		}
+	}
 }
 
 @media (max-width: 1360px) {
@@ -417,6 +449,7 @@ button{
 		background: url('../icons/icon-bg.png') center center/cover no-repeat;
 		@media (max-width: 576px){
 			left: -50px;
+			top: -10px;
 		}
 	}
 	&-phone{
@@ -438,4 +471,20 @@ button{
 
 .mail{
 	font-weight: normal;
+}
+
+.popup{
+	border-radius: 15px;
+	&-form{
+		border-radius: 15px;
+		max-width: 433px;
+		max-height: 480px;
+	}
+	@media (max-width: 330px){
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }

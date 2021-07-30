@@ -35,24 +35,24 @@
                         </div>
                         <nav class="menu menu-mobile">
                             <ul class="menu-mobile-list">
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Что изучаем на занятиях</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Наш учебник</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Результаты обучения</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Наши преподаватели</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Занятия с логопедом</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Комнаты  ожидания</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">О нас</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Фото и видео</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Отзывы</a></li>
-                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#">Контакты</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#learning">Что изучаем на занятиях</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#manual">Наш учебник</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#results">Результаты обучения</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#teachers">Наши преподаватели</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#logoped">Занятия с логопедом</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#rooms">Комнаты  ожидания</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#about">О нас</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#gallery">Фото и видео</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#reviews">Отзывы</a></li>
+                                <li class="menu-mobile-item"><a class="menu-mobile__link" href="#contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="header__callback d-flex">
                         <a href="tel:80000000000" class="phone header__phone">8 (000) 000-00-00</a>
-                        <button class="btn btn-callback header__btn">
+                        <a href="#entry" data-fancybox class="btn btn-callback header__btn popup">
                             Заказать звонок
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -195,8 +195,8 @@
         </div>
     </div>
 </article>
-<!--
-<article class="learning">
+
+<article class="learning" id="learning">
     <div class="learning__inner">
         <div class="container">
             <header class="learning">
@@ -220,60 +220,216 @@
                 </div>
             </header>
             <div class="learning__content">
-                <article class="tab-content learning__tab--content" data-tab-content="3-4-years">
-                    <aside>
-
-                    </aside>
-                </article>
-                <article class="tab-content learning__tab--content" data-tab-content="4-5-years">
-                    2
-                </article>
-                <article class="tab-content learning__tab--content" data-tab-content="5-6-years">
-                    3
-                </article>
-                <article class="tab-content tab-content--active  learning__tab--content row" data-tab-content="preschool">
-                    <aside class="col-lg-3 pl-0 pr-0 learning__aside bg-darkblue">
-                        <ul class="tabs tab__subtabs">
-                            <li class="tab tab__subtab">
-                                Логопедия - чтение
-                            </li>
-                            <li class="tab tab__subtab tab__subtab--active">
-                                Озорная арифметика
-                            </li>
-                            <li class="tab tab__subtab">
-                                Мир на ладошке
-                            </li>
-                            <li class="tab tab__subtab">
-                                Развитие речи
-                            </li>
-                            <li class="tab tab__subtab learning__subtab">
-                                Английский язык
-                            </li>
-                        </ul>
-                    </aside>
-                    <div class="col-lg-6">
-                        <div class="learning__info tab__info">
-                            <h4 class="tab__title">
-                                Чем занимаемся во время подготовки к школе на озорной арифметике
-                            </h4>
-                            <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
-                            <p>Bis dat qui cito dat. Bonorum possessio.</p>
-                            <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                <div class="tab-content" id="3-4-years">
+                    <div class="row ml-0 mr-0">
+                        <div class="learning__content--left col-lg-3 pl-0 pr-0">
+                            <aside class="learning__aside bg-darkblue">
+                                <ul class="tabs subtabs">
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Логопедия - чтение
+                                    </li>
+                                    <li class="tab tab__subtab tab__subtab--active"  data-tab="">
+                                        Озорная арифметика
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Мир на ладошке
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Развитие речи
+                                    </li>
+                                    <li class="tab tab__subtab learning__subtab" data-tab="">
+                                        Английский язык
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="learning__content--right col-lg-9 pl-0 pr-0">
+                            <article class=" tab-content learning__tab--content" id="">
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                2
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                3
+                            </article>
+                            <article class="tab-content tab-content--active  learning__tab--content row" id="">
+                                <div class="learning__info tab__info col-lg-8">
+                                    <h4 class="tab__title">
+                                        Чем занимаемся во время подготовки к школе на озорной арифметике
+                                    </h4>
+                                    <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
+                                    <p>Bis dat qui cito dat. Bonorum possessio.</p>
+                                    <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                                </div>
+                                <div class="col-lg-3 learning__img">
+                                    <img src="img/learning/tab-1.png" alt="mouse">
+                                </div>
+                            </article>
+                            <article class="tab-content learning__tab--content" id="learn-english">
+                                5
+                            </article>
                         </div>
                     </div>
-                    <div class="col-lg-3 learning__img">
-                        <img src="img/learning/tab-1.png" alt="mouse">
+                </div>
+                <div class="tab-content" id="4-5-years">
+                    <div class="row ml-0 mr-0">
+                        <div class="learning__content--left col-lg-3 pl-0 pr-0">
+                            <aside class="learning__aside bg-darkblue">
+                                <ul class="tabs subtabs">
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Логопедия - чтение
+                                    </li>
+                                    <li class="tab tab__subtab tab__subtab--active"  data-tab="">
+                                        Озорная арифметика
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Мир на ладошке
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Развитие речи
+                                    </li>
+                                    <li class="tab tab__subtab learning__subtab" data-tab="">
+                                        Английский язык
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="learning__content--right col-lg-9 pl-0 pr-0">
+                            <article class=" tab-content learning__tab--content" id="">
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                2
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                3
+                            </article>
+                            <article class="tab-content tab-content--active  learning__tab--content row" id="">
+                                <div class="learning__info tab__info col-lg-8">
+                                    <h4 class="tab__title">
+                                        Чем занимаемся во время подготовки к школе на озорной арифметике
+                                    </h4>
+                                    <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
+                                    <p>Bis dat qui cito dat. Bonorum possessio.</p>
+                                    <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                                </div>
+                                <div class="col-lg-3 learning__img">
+                                    <img src="img/learning/tab-1.png" alt="mouse">
+                                </div>
+                            </article>
+                            <article class="tab-content learning__tab--content" id="learn-english">
+                                5
+                            </article>
+                        </div>
                     </div>
-                </article>
-                <article class="tab-content  learning__tab--content" data-tab-content="">
-                    5
-                </article>
+                </div>
+                <div class="tab-content" id="5-6-years">
+                    <div class="row ml-0 mr-0">
+                        <div class="learning__content--left col-lg-3 pl-0 pr-0">
+                            <aside class="learning__aside bg-darkblue">
+                                <ul class="tabs subtabs">
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Логопедия - чтение
+                                    </li>
+                                    <li class="tab tab__subtab tab__subtab--active"  data-tab="">
+                                        Озорная арифметика
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Мир на ладошке
+                                    </li>
+                                    <li class="tab tab__subtab" data-tab="">
+                                        Развитие речи
+                                    </li>
+                                    <li class="tab tab__subtab learning__subtab" data-tab="">
+                                        Английский язык
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="learning__content--right col-lg-9 pl-0 pr-0">
+                            <article class=" tab-content learning__tab--content" id="">
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                2
+                            </article>
+                            <article class="tab-content learning__tab--content" id="">
+                                3
+                            </article>
+                            <article class="tab-content tab-content--active  learning__tab--content row" id="">
+                                <div class="learning__info tab__info col-lg-8">
+                                    <h4 class="tab__title">
+                                        Чем занимаемся во время подготовки к школе на озорной арифметике
+                                    </h4>
+                                    <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
+                                    <p>Bis dat qui cito dat. Bonorum possessio.</p>
+                                    <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                                </div>
+                                <div class="col-lg-3 learning__img">
+                                    <img src="img/learning/tab-1.png" alt="mouse">
+                                </div>
+                            </article>
+                            <article class="tab-content learning__tab--content" id="learn-english">
+                                5
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content tab-content--active" id="preschool">
+                    <div class="row ml-0 mr-0">
+                        <div class="learning__content--left col-lg-3 pl-0 pr-0">
+                            <aside class="learning__aside bg-darkblue">
+                                <ul class="tabs tab__subtabs">
+                                    <li class="tab subtab" data-tab="speech-therapy">
+                                        Логопедия - чтение
+                                    </li>
+                                    <li class="tab subtab subtab__subtab--active"  data-tab="arithmetic">
+                                        Озорная арифметика
+                                    </li>
+                                    <li class="tab subtab" data-tab="world-on-palm">
+                                        Мир на ладошке
+                                    </li>
+                                    <li class="tab subtab" data-tab="speech-dev">
+                                        Развитие речи
+                                    </li>
+                                    <li class="tab subtab learning__subtab" data-tab="learn-english">
+                                        Английский язык
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                        <div class="learning__content--right col-lg-9 pl-0 pr-0">
+                            <article class="subtab-content learning__tab--content" id="speech-therapy">
+                            </article>
+                            <article class="subtab-content learning__tab--content" id="arithmetic">
+                                2
+                            </article>
+                            <article class="subtab-content learning__tab--content" id="world-on-palm">
+                                3
+                            </article>
+                            <article class="subtab-content subtab-content--active  learning__tab--content row" id="speech-dev">
+                                <div class="learning__info tab__info col-lg-8">
+                                    <h4 class="tab__title">
+                                        Чем занимаемся во время подготовки к школе на озорной арифметике
+                                    </h4>
+                                    <p>Abusus non tollit usum. Accepto damno. Accessio cedit principali. Actio bonae fidei. Actio in factum concepta. Actio in ius concepta.  Actio in personam. Actio in rem. Actio noxalis. Actio poenalis. Alibi. A potiori. Argumenta ponderantur, non numerantur. Argumentum ad oculos.</p>
+                                    <p>Bis dat qui cito dat. Bonorum possessio.</p>
+                                    <p>Casum sentit dominus. Caveat emptor. Ceteris paribus. Condicio sine qua non. Contra factum non datur argumentum. Conventio facit legam. Corpus delicti. Crescente malitia crescere debet et poena.</p>
+                                </div>
+                                <div class="col-lg-3 learning__img">
+                                    <img src="img/learning/tab-1.png" alt="mouse">
+                                </div>
+                            </article>
+                            <article class="subtab-content learning__tab--content" id="learn-english">
+                                5
+                            </article>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </article>
--->
-<article class="manual">
+
+<article class="manual" id="manual">
     <div class="manual__inner position-relative">
         <img class="position-absolute manual__left manual__cloud" src="img/manual/left.png" alt="clouds">
         <img class="position-absolute manual__right manual__cloud" src="img/manual/right.png" alt="clouds">
@@ -333,7 +489,7 @@
         </div>
     </div>
 </article>
-<section class="result">
+<section class="result" id="results">
     <div class="result__inner">
         <div class="container">
             <header>
@@ -411,7 +567,7 @@
         </div>
     </div>
 </section>
-<article class="teachers">
+<article class="teachers" id="teachers">
     <section class="teachers__inner">
         <div class="container">
             <h2 class="title text-center teachers__title">Наши преподаватели</h2>
@@ -524,7 +680,7 @@
         </div>
     </section>
 </article>
-<article class="logoped ">
+<article class="logoped" id="logoped">
     <section class="logoped__inner">
         <div class="container">
             <h2 class="title text-center logoped__title">Наши логопеды работают для Вас</h2>
@@ -602,7 +758,7 @@
         </div>
     </section>
 </article>
-<article class="rooms">
+<article class="rooms" id="rooms">
     <section class="rooms__inner">
         <header class="rooms__header">
             <h2 class="title text-white title-section">У нас комфортные комнаты ожидания</h2>
@@ -646,7 +802,7 @@
         </div>
     </section>
 </article>
-<article class="text-block bg-block-clouds">
+<article class="text-block bg-block-clouds" id="about">
     <section class="text-block__inner">
         <div class="container">
             <h2 class="title-section text-center">Мы открыты, честны и искренне <br>
@@ -667,7 +823,7 @@
         </div>
     </section>
 </article>
-<article class="gallery">
+<article class="gallery" id="gallery">
     <section class="gallery__inner">
         <header class="gallery__top">
             <h2 class="title title-section text-center">Фото и видео занятий</h2>
@@ -763,15 +919,15 @@
                     </div>
                 </div>
                 <div class="col-12 text-center">
-                    <button class="btn font-weight-bold">
+                    <a href="#entry" data-fancybox="" class="btn popup font-weight-bold">
                         Оставить отзыв
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 </article>
-<article class="contacts">
+<article class="contacts" id="contacts">
     <section class="contacts__inner">
         <div id="YaMaps"></div>
         <div class="container position-relative">
@@ -817,14 +973,14 @@
                         <div class="footer__links-item autor">Создание сайтов - <a href="https://seoprostor.ru/">SEO Простор</a></div>
                         <div class="footer__links-item policy"><a href="#policy">Политика конфиденциальности</a></div>
                      </div>
-                     <button class="btn btn-callback footer__btn">
+                     <a href="#entry" data-fancybox="" class="btn btn-callback footer__btn popup">
                         Заказать звонок
-                    </button>
+                    </a>
                     <div class="social d-flex">
-                       <a class="social__item">
+                       <a href="https://vk.com/" class="social__item">
                           <img src="icons/vk.png" alt="vk">
                         </a>
-                       <a class="social__item">
+                       <a href="https://www.instagram.com/" class="social__item">
                           <img src="icons/inst.png" alt="inst">
                         </a>
                     </div>
@@ -847,11 +1003,25 @@
  </footer>
 
  <div style="display: none;">
-   <form action="" class="form form-popup" method="POST">
-      <h3 class="form-popup__title">Оставить заявку</h3>
-      .
-   </form>
-
+   <div id="entry" class="popup popup-form">
+      <form action="" class="form form-popup" method="POST">
+         <h3 class="form-popup__title">Оставить заявку</h3>
+         <div class="row">
+            <div class="col-12">
+               <input type="tel" class="form__input form__input-dark w-100 form-popup__phone" id="popup-tel" placeholder="+7 (000) 000-00-00">
+            </div>
+            <div class="col-12">
+               <input class="btn w-100" type="submit" value="Заказать звонок">
+            </div>
+            <div class="col-12">
+               <label class="form-popup__label">
+                  <input type="checkbox" name="policy" id="policy" checked>
+                  Соглашаюсь на обработку персональных данных
+              </label>
+            </div>
+         </div>
+      </form>
+   </div>
  </div>
 
     <script src="js/libs.min.js"></script>

@@ -13,14 +13,14 @@
                         <div class="footer__links-item autor">Создание сайтов - <a href="https://seoprostor.ru/">SEO Простор</a></div>
                         <div class="footer__links-item policy"><a href="#policy">Политика конфиденциальности</a></div>
                      </div>
-                     <button class="btn btn-callback footer__btn">
+                     <a href="#entry" data-fancybox="" class="btn btn-callback footer__btn popup">
                         Заказать звонок
-                    </button>
+                    </a>
                     <div class="social d-flex">
-                       <a class="social__item">
+                       <a href="https://vk.com/" class="social__item">
                           <img src="icons/vk.png" alt="vk">
                         </a>
-                       <a class="social__item">
+                       <a href="https://www.instagram.com/" class="social__item">
                           <img src="icons/inst.png" alt="inst">
                         </a>
                     </div>
@@ -43,11 +43,25 @@
  </footer>
 
  <div style="display: none;">
-   <form action="" class="form form-popup" method="POST">
-      <h3 class="form-popup__title">Оставить заявку</h3>
-      .
-   </form>
-
+   <div id="entry" class="popup popup-form">
+      <form action="" class="form form-popup" method="POST">
+         <h3 class="form-popup__title">Оставить заявку</h3>
+         <div class="row">
+            <div class="col-12">
+               <input type="tel" class="form__input form__input-dark w-100 form-popup__phone" id="popup-tel" placeholder="+7 (000) 000-00-00">
+            </div>
+            <div class="col-12">
+               <input class="btn w-100" type="submit" value="Заказать звонок">
+            </div>
+            <div class="col-12">
+               <label class="form-popup__label">
+                  <input type="checkbox" name="policy" id="policy" checked>
+                  Соглашаюсь на обработку персональных данных
+              </label>
+            </div>
+         </div>
+      </form>
+   </div>
  </div>
 
     <script src="js/libs.min.js"></script>

@@ -1,14 +1,31 @@
 window.addEventListener('DOMContentLoaded', () => {
     menu = document.querySelector('.menu-mobile'),
     hamburger = document.querySelector('.burger');
+    menuItem = document.querySelectorAll('.menu-mobile-item, .menu-mobile__link');
 
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('burger--active');
         menu.classList.toggle('menu-mobile--active');
     });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.remove('burger--active');
+            menu.classList.remove('menu-mobile--active');
+        });
+    });
 });
 
 $(window).on('load', () => {
+
+    $('a[href^="#"]:not(a.popup)').on('click', function() {
+        let href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        });
+        return false;
+    });
+
     $('.slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -175,4 +192,40 @@ $(window).on('load', () => {
         script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab527b78d411aa965e9c8654c48ac3b2091a4b0b640f85eda2bf8ccfc5a52271a&amp;width=100%25&amp;height=776&amp;lang=ru_RU&amp;scroll=true";
         document.getElementById("YaMaps").appendChild(script);
     }
+
+
+
+    // Табы
+    document.querySelectorAll('.tab').forEach((item) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('data-tab');
+
+            document.querySelectorAll('.tab').forEach(
+                (child) => {child.classList.remove('tab--active')}
+            );
+            document.querySelectorAll('.tab-content').forEach(
+                (child) => {child.classList.remove('tab-content--active')}
+            );
+
+            item.classList.add('tab--active');
+            document.getElementById(id).classList.add('tab-content--active');
+        })
+    });
+    document.querySelectorAll('.subtab').forEach((item) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('data-tab');
+
+            document.querySelectorAll('.subtab').forEach(
+                (child) => {child.classList.remove('tab--active')}
+            );
+            document.querySelectorAll('.subtab-content').forEach(
+                (child) => {child.classList.remove('subtab-content--active')}
+            );
+
+            item.classList.add('subtab--active');
+            document.getElementById(id).classList.add('subtab-content--active');
+        })
+    });
 });
