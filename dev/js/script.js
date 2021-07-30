@@ -157,4 +157,22 @@ $(window).on('load', () => {
             '</svg>' +
         '</button>'
     });
+
+
+    // Map
+    YaMapsShown = false; 
+    $(window).scroll(function() {
+        if (!YaMapsShown){
+            if($(window).scrollTop() + $(window).height() > $(document).height() - 776) {      
+            showYaMaps();
+            YaMapsShown = true;
+            }
+        }
+    });
+    function showYaMaps(){
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+        script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab527b78d411aa965e9c8654c48ac3b2091a4b0b640f85eda2bf8ccfc5a52271a&amp;width=100%25&amp;height=776&amp;lang=ru_RU&amp;scroll=true";
+        document.getElementById("YaMaps").appendChild(script);
+    }
 });

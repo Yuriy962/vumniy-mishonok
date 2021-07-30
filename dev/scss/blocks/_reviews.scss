@@ -80,3 +80,13 @@
         }
     }
 }
+@media (max-width: 576px){
+    .reviews{
+        .slick-prev{
+            left: -10px;
+        }
+        .slick-next{
+            right: -10px;
+        }
+    }
+}

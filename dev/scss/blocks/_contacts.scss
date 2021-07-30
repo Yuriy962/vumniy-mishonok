@@ -1,0 +1,83 @@
+.contacts{
+    min-height: 589px;
+    &__inner{
+        padding: 97px 0 69px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__title{
+        font-family: Balsamiq Sans;
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    &__info{
+        position: relative;
+        z-index: 1;
+        left: 0;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 35px rgba(219, 219, 219, 0.4);
+        border-radius: 15px;
+        padding: 30px 60px 20px 45px;
+        max-width: 493px;
+        width: 100%;
+    }
+    &__descr{
+        padding-left: 60px;
+    }
+    &__location{
+        position: relative;
+        font-size: 18px;
+        margin-bottom: 25px;
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+        li{
+           margin-bottom: 18px; 
+        }
+    }
+    &__link{
+        position: relative;
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 15px;
+        color: #1C4B9B;
+        display: block;
+    }
+}
+
+#YaMaps{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+@media (max-width: 576px){
+    .contacts{
+        &__inner{
+            padding: 202px 0 54px;
+        }
+        &__title{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        &__info{
+            font-size: 15px;
+            left: 0px;
+            padding: 30px 20px 35px;
+        }
+        &__location{
+            font-size: 15px;
+        }
+        &__phone{
+            font-size: 19px;
+        }
+        &__mail{
+            font-size: 15px;
+        }
+    }
+}
