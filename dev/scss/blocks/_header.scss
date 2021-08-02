@@ -224,11 +224,10 @@
 
 a{
 	&:hover{
-		color: $bg-yellow;
 		text-decoration: none;
 	}
     &:not(.btn):hover{
-        color: #0c3f96;
+        color: $bg-yellow;
         text-decoration: none;
     }
 }
