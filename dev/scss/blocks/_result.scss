@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        padding-left: 40px;
         &-footer{
             flex-direction: column;
         }
@@ -54,6 +55,9 @@
         margin-left: 50px;
         align-self: flex-end;
         margin-bottom: 20px;
+    }
+    .tab-content{
+        padding-left: 0;
     }
 }
 @media (max-width: 1200px){

@@ -134,6 +134,7 @@ $(window).on('load', () => {
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
+        infinite: true,
         prevArrow: 
         '<button type="button" class="slick-arrow slick-arrow--bottom slick-arrow--big slick-arrow--dark slick-prev">' +
             '<svg class="slick-arrow-svg" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">' + 
@@ -189,10 +190,9 @@ $(window).on('load', () => {
     function showYaMaps(){
         var script   = document.createElement("script");
         script.type  = "text/javascript";
-        script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab527b78d411aa965e9c8654c48ac3b2091a4b0b640f85eda2bf8ccfc5a52271a&amp;width=100%25&amp;height=776&amp;lang=ru_RU&amp;scroll=true";
+        script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab527b78d411aa965e9c8654c48ac3b2091a4b0b640f85eda2bf8ccfc5a52271a&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true";
         document.getElementById("YaMaps").appendChild(script);
     }
-
 
 
     // Табы
