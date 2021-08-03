@@ -488,3 +488,13 @@ button{
 		transform: translateY(-50%);
 	}
 }
+
+@media (max-width: 1200px){
+	.bg-halftrans{
+		border-radius: 10px;
+		padding: 10px;
+		&--dark{
+			background: rgba(0, 0, 0, 0.6);
+		}
+	}
+}

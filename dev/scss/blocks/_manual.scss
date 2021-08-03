@@ -47,9 +47,19 @@
         right: 0;
     }
 }
+@media (max-width: 1500px){
+    .manual{
+        &__inner{
+            background-position-x: -200px;
+        }
+    }
+}
 @media (max-width: 1200px){
     .manual{
-
+        &__inner{
+            background-position-x: initial;
+            background-position-y: -100px;
+        }
     }
 }
 @media (max-width: 992px){
@@ -73,10 +83,12 @@
             margin-bottom: 35px;
         }
         &__inner {
+            background-position-y: 295px;
+            background-position-x: initial;
             background-image: url(../img/manual/manual.jpg);
             background-repeat: no-repeat;
             background-size: 900px;
-            background-position: 23% 15%;
+            // background-position: 23% 15%;
         }
         &__form{
             margin-top: 360px;
@@ -85,6 +97,9 @@
 }
 @media (max-width: 768px){
     .manual{
+        &__inner{
+            background-position-y: 20%;
+        }
         &__title{
             font-size: 29px;
         }
@@ -98,10 +113,11 @@
     .manual {
         &__inner{
             background-size: 600px;
-            background-position: 23% 15%;
+            background-position: 23% 23%;
         }
         &__left{
             bottom: 0;
+            z-index: -1;
         }
         &__form{
             padding: 27px 23px 40px;
@@ -121,6 +137,17 @@
         }
         &__form{
             margin-top: 260px;
+        }
+        &__left,
+        &__right{
+            z-index: -1;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .manual {
+        &__inner {
+            background-position: 25% 30%;
         }
     }
 }
