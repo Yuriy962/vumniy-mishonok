@@ -61,7 +61,7 @@ $(window).on('load', () => {
     $('.teachers__slider').slick({
         speed: 300,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         infinite: true,
         prevArrow: 
