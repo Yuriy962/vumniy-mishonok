@@ -159,6 +159,8 @@ body{
 	background: url(../img/text-blocks/clouds-for-text-block.jpg) center center/cover no-repeat;
 }
 
+
+
 .form {
 	border-radius: 15px;
 	padding: 30px 14px 35px;
@@ -175,7 +177,8 @@ body{
 	&__input {
 		background: transparent;
 		border: none;
-		font-size: 20px;
+		font-size: 18px;
+		max-width: 100%;
 		border-bottom: 2px solid;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -293,8 +296,18 @@ body{
 	font-size: 21px;
 	margin-bottom: 20px;
 	font-weight: 700;
+	position: relative;
 	@media (max-width: 576px){
 		font-size: 18px;
+	}
+	&:after{
+		content: url('../img/learning/arrow.png');
+		position: absolute;
+	}
+	@media(max-width: 992px){
+		&:after{
+			content: url('../img/learning/arrow-down.png');
+		}
 	}
 }
 
@@ -496,5 +509,45 @@ button{
 		&--dark{
 			background: rgba(0, 0, 0, 0.6);
 		}
+		&--light{
+			background: rgba(255, 255, 255, 0.6);
+		}
+	}
+}
+
+.cloud{
+	position: absolute;
+	z-index: 0;
+	&--left{
+		left: 0;
+	}
+	&--right{
+		right: 0;
+	}
+	&--left,
+	&--right{
+		top: 0;
+		bottom: 0;
+	}
+	&--top,
+	&--bottom{
+		width: 100%;
+	}
+	&--top{
+		top: 0;
+	}
+	&--bottom{
+		bottom: 0;
+	}
+}
+.blob{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	&--left{
+		left: 0;
+	}
+	&--right{
+		right: 0;
 	}
 }
