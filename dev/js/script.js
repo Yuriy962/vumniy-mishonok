@@ -201,12 +201,25 @@ $(window).on('load', () => {
             e.preventDefault();
             const id = e.target.getAttribute('data-tab');
 
-            document.querySelectorAll('.tab').forEach(
+            // let parent = e.target.parentNode;
+            // console.log(e.target.parentNode.classList);
+            let elem = e.target;
+            let parent = '';
+            while ((elem = elem.parentElement) !== null) {
+                if (elem.nodeType !== Node.ELEMENT_NODE) {
+                    continue;
+                }
+                if (elem.matches('.section-with-tabs')) {
+                    parent = elem;
+                    break;
+                }
+            }
+            parent.querySelectorAll('.tab--active').forEach(
                 (child) => {
                     child.classList.remove('tab--active')
                 }
             );
-            document.querySelectorAll('.tab-content').forEach(
+            parent.querySelectorAll('.tab-content--active').forEach(
                 (child) => {
                     child.classList.remove('tab-content--active')
                 }
@@ -221,17 +234,18 @@ $(window).on('load', () => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
             const id = e.target.getAttribute('data-subtab');
-            document.querySelectorAll('.subtab').forEach(
+            document.querySelectorAll('.tab-content--active .subtab--active').forEach(
                 (child) => {
-                    child.classList.remove('subtab--active')
+                    child.classList.remove('subtab--active');
                 }
             );
-            document.querySelectorAll('.subtab-content').forEach(
+            document.querySelectorAll('.tab-content--active .subtab-content--active').forEach(
                 (child) => {
                     child.classList.remove('subtab-content--active')
                 }
             );
-            console.log(document.getElementById(id));
+
+
             item.classList.add('subtab--active');
             document.getElementById(id).classList.add('subtab-content--active');
         })
