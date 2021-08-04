@@ -59,6 +59,13 @@
         }
     }
 }
+@media  (max-width: 480px){
+    .promo{
+        .blob{
+            display: none;
+        }
+    }
+}
 @media (max-width: 400px){
     .promo {
         padding-top: 126px;

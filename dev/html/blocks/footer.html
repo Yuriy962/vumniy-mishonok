@@ -64,6 +64,33 @@
    </div>
  </div>
 
+ <div style="display: none;">
+   <div id="review-form" class="popup popup-form popup-form--review">
+      <form action="" class="form form-popup" method="POST">
+         <h3 class="form-popup__title">Оставить отзыв</h3>
+         <div class="row">
+            <div class="col-12">
+               <input type="text" class="form__input form__input-dark w-100 form-popup__phone" id="popup-name" placeholder="Имя">
+            </div>
+            <div class="col-12">
+               <textarea class=" form__input-dark w-100 mb-4" name="review-text" id="" placeholder="Отзыв">
+
+               </textarea> 
+            </div>
+            <div class="col-12">
+               <input class="btn w-100" type="submit" value="Заказать звонок">
+            </div>
+            <div class="col-12">
+               <label class="form-popup__label">
+                  <input type="checkbox" name="policy" id="policy" checked>
+                  Соглашаюсь на обработку персональных данных
+              </label>
+            </div>
+         </div>
+      </form>
+   </div>
+ </div>
+
     <script src="js/libs.min.js"></script>
     <script src="js/all.min.js"></script>
  </body>
