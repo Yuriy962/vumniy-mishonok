@@ -8,7 +8,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/logopedist/logoped-1.png" alt="" class="teachers__img">
+                                    <img src="img/logopedist/logoped-1.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -22,7 +22,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/teachers/teacher-1.png" alt="" class="teachers__img">
+                                    <img src="img/teachers/teacher-1.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -36,7 +36,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/teachers/teacher-2.png" alt="" class="teachers__img">
+                                    <img src="img/teachers/teacher-2.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -56,16 +56,23 @@
                     </div>
                     <form action="" class="form__inline logoped__form form--dashed">
                         <h3 class="title-small form__title manual__title logoped__form-title">Записаться к логопеду на консультацию можно, оставив контакты в форме ниже</h3>
+                        <div class="form-messages">
+                            <p class="form-message form-message--success">
+                                Заявка
+                                отправлена!</p>
+                            <p class="form-message form-message--error">
+                                Ошибка!</p>
+                        </div>
                         <div class="row form-row align-items-center">
                             <div class="col-xl-4 col-12">
-                                <input type="tel" class="form__input form__input-dark logoped__input" id="logoped-tel" placeholder="+7 (000) 000-00-00">
+                                <input type="tel" class="form__input form__input-dark logoped__input" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                             </div>
                             <div class="col-xl-4 col-12">
                                 <input class="btn logoped__btn m-0" type="submit" value="Консультация 0 руб.">
                             </div>
                             <div class="col-xl-4 col-12">
                                 <label class="manual__policy logoped__policy">
-                                    <input type="checkbox" name="policy" id="policy" checked>
+                                    <input type="checkbox" name="policy" id="policy" checked required>
                                     <span>Соглашаюсь на обработку персональных данных</span>
                                 </label>
                             </div>

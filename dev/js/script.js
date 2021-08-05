@@ -257,5 +257,41 @@ $(window).on('load', () => {
             $(this).toggleClass('learning__dropdown--active');
             content.slideToggle();
         }
-    })
+    });
+
+    // Отправка формы
+    $("form").on("submit", (function (e) {
+        e.preventDefault();
+        let form = $(this);
+        return $.ajax({
+            type: "POST",
+            url: "../send.php",
+            data: $(this).serialize(),
+            success: function (e) {
+                e = JSON.parse(e);
+                console.log(e.result);
+                if("success" === e.result){
+                    form.find('.form-message--success').css('display', 'block');
+                }else{
+                    form.find('.form-message--error').css('display', 'block');
+                }
+                form.find("input[type='name'],input[type='tel'], textarea").val("").val(""), $("form").trigger("reset");
+            }
+        });
+    }));
+
+
+    var header = document.querySelector('.header');
+    var sticky = header.offsetTop;
+
+    if($(window).width() < 767) {
+        $(this).scroll(function () {
+            if(window.pageYOffset > sticky){
+                header.classList.add('position-fixed');
+            }else{
+                header.classList.remove('position-fixed');
+            }
+        });
+    }
+
 });

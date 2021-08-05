@@ -1,12 +1,12 @@
 
     <section class="promo position-relative">
-        <img class="cloud cloud--left" src="img/promo/cloud-left.png" alt="promo-cloud--left">
-        <img class="cloud cloud--right" src="img/promo/cloud-right.png" alt="promo-cloud--right">
-        <img class="cloud cloud--top" src="img/promo/cloud-top.png" alt="promo-cloud--top">
-        <img class="cloud cloud--bottom" src="img/promo/cloud-bottom.png" alt="promo-cloud--bottom">
+        <img class="lazy cloud cloud--left" src="img/promo/cloud-left.png" alt="promo-cloud--left">
+        <img class="lazy cloud cloud--right" src="img/promo/cloud-right.png" alt="promo-cloud--right">
+        <img class="lazy cloud cloud--top" src="img/promo/cloud-top.png" alt="promo-cloud--top">
+        <img class="lazy cloud cloud--bottom" src="img/promo/cloud-bottom.png" alt="promo-cloud--bottom">
 
-        <img class="blob blob--left" src="img/promo/promo-left.png" alt="blobs">
-        <img class="blob blob--right" src="img/promo/promo-right.png" alt="blobs">
+        <img class="lazy blob blob--left" src="img/promo/promo-left.png" alt="blobs">
+        <img class="lazy blob blob--right" src="img/promo/promo-right.png" alt="blobs">
         <div class="promo__inner position-relative">
             <div class="container">
                 <div class="promo__content">
@@ -30,21 +30,28 @@
 
     <article class="block-in-front">
         <div class="container position-relative">
-            <form class="form form-inline bg-darkblue form-infront text-white">
+            <form class="form form-inline bg-darkblue form-infront text-white" method="POST">
                 <div class="row ml-0 mr-0 align-items-lg-center">
+                    <div class="form-messages col-12 text-center">
+                        <p class="form-message form-message--success">
+                            Заявка
+                            отправлена!</p>
+                        <p class="form-message form-message--error">
+                            Ошибка!</p>
+                    </div>
                     <div class="col-lg-4 col-12">
                         <strong class="title title-small form__title">Оставьте номер телефона</strong> <br>
                         <span class="subtitle subtitle-small form__subtitle">и мы расскажем, чем отличаемся от остальных детских клубов</span>
                     </div>
                     <div class="col-lg-3 col-12">
-                        <input class="form__input form__input-dark" type="tel" name="tel" id="phone" placeholder="+7 (000) 000-00-00">
+                        <input class="form__input form__input-dark" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                     </div>
                     <div class="col-lg-3 col-12">
                         <input class="btn" type="submit" value="Узнать отличия">
                     </div>
                     <div class="col-lg-2 col-12">
                         <label>
-                            <input type="checkbox" name="policy" id="policy" checked>
+                            <input type="checkbox" name="policy" id="policy" checked required>
                             Соглашаюсь на обработку персональных данных
                         </label>
                     </div>

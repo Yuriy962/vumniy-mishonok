@@ -62,13 +62,13 @@
 
 
     <section class="promo position-relative">
-        <img class="cloud cloud--left" src="img/promo/cloud-left.png" alt="promo-cloud--left">
-        <img class="cloud cloud--right" src="img/promo/cloud-right.png" alt="promo-cloud--right">
-        <img class="cloud cloud--top" src="img/promo/cloud-top.png" alt="promo-cloud--top">
-        <img class="cloud cloud--bottom" src="img/promo/cloud-bottom.png" alt="promo-cloud--bottom">
+        <img class="lazy cloud cloud--left" src="img/promo/cloud-left.png" alt="promo-cloud--left">
+        <img class="lazy cloud cloud--right" src="img/promo/cloud-right.png" alt="promo-cloud--right">
+        <img class="lazy cloud cloud--top" src="img/promo/cloud-top.png" alt="promo-cloud--top">
+        <img class="lazy cloud cloud--bottom" src="img/promo/cloud-bottom.png" alt="promo-cloud--bottom">
 
-        <img class="blob blob--left" src="img/promo/promo-left.png" alt="blobs">
-        <img class="blob blob--right" src="img/promo/promo-right.png" alt="blobs">
+        <img class="lazy blob blob--left" src="img/promo/promo-left.png" alt="blobs">
+        <img class="lazy blob blob--right" src="img/promo/promo-right.png" alt="blobs">
         <div class="promo__inner position-relative">
             <div class="container">
                 <div class="promo__content">
@@ -92,21 +92,28 @@
 
     <article class="block-in-front">
         <div class="container position-relative">
-            <form class="form form-inline bg-darkblue form-infront text-white">
+            <form class="form form-inline bg-darkblue form-infront text-white" method="POST">
                 <div class="row ml-0 mr-0 align-items-lg-center">
+                    <div class="form-messages col-12 text-center">
+                        <p class="form-message form-message--success">
+                            Заявка
+                            отправлена!</p>
+                        <p class="form-message form-message--error">
+                            Ошибка!</p>
+                    </div>
                     <div class="col-lg-4 col-12">
                         <strong class="title title-small form__title">Оставьте номер телефона</strong> <br>
                         <span class="subtitle subtitle-small form__subtitle">и мы расскажем, чем отличаемся от остальных детских клубов</span>
                     </div>
                     <div class="col-lg-3 col-12">
-                        <input class="form__input form__input-dark" type="tel" name="tel" id="phone" placeholder="+7 (000) 000-00-00">
+                        <input class="form__input form__input-dark" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                     </div>
                     <div class="col-lg-3 col-12">
                         <input class="btn" type="submit" value="Узнать отличия">
                     </div>
                     <div class="col-lg-2 col-12">
                         <label>
-                            <input type="checkbox" name="policy" id="policy" checked>
+                            <input type="checkbox" name="policy" id="policy" checked required>
                             Соглашаюсь на обработку персональных данных
                         </label>
                     </div>
@@ -204,10 +211,10 @@
 </article>
 
 <article class="learning position-relative" id="learning">
-    <img class="cloud cloud--left" src="img/learning/cloud-left.png" alt="learning-cloud">
-    <img class="cloud cloud--right" src="img/learning/cloud-right.png" alt="learning-cloud">
-    <img class="blob blob--left" src="img/learning/bloop-left.png" alt="learning-bloob">
-    <img class="blob blob--right" src="img/learning/bloop-right.png" alt="learning-bloob">
+    <img class="lazy cloud cloud--left" src="img/learning/cloud-left.png" alt="learning-cloud">
+    <img class="lazy cloud cloud--right" src="img/learning/cloud-right.png" alt="learning-cloud">
+    <img class="lazy blob blob--left" src="img/learning/bloop-left.png" alt="learning-bloob">
+    <img class="lazy blob blob--right" src="img/learning/bloop-right.png" alt="learning-bloob">
     <div class="learning__inner position-relative section-with-tabs">
         <div class="container">
             <div class="learning__inner-desk d-none d-lg-block">
@@ -759,6 +766,10 @@
                     <form class="manual__form form-bg-white manual__form" method="POST">
                         <h3 class="title-small form__title manual__title">Получите ознакомительный фрагмент учебника,
                             на удобный для вас мессенджер</h3>
+                        <div class="form-messages">
+                            <p class="form-message form-message--success">Заявка отправлена!</p>
+                            <p class="form-message form-message--error">Ошибка!</p>
+                        </div>
                         <div class="row form-row">
                             <div class="col-lg-4 col-md-6 d-flex flex-column">
                                 <select class="form__input form__select manual__select" name="age" id="age">
@@ -770,7 +781,7 @@
                                     value="Получить фрагмент">
                             </div>
                             <div class="col-lg-4 col-md-6 d-flex flex-column">
-                                <input class="form__input form__input-dark manual__phone" type="tel" name="tel" id="phone" placeholder="+7 (000) 000-00-00">
+                                <input class="form__input form__input-dark manual__phone" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                             </div>
                             <div class="col-lg-4">
                                 <div class="d-flex flex-column">
@@ -793,7 +804,7 @@
                             </div>
                             <div class="col-12">
                                 <label class="manual__policy">
-                                    <input type="checkbox" name="policy" id="policy" checked>
+                                    <input type="checkbox" name="policy" id="policy" checked required>
                                     <span>Соглашаюсь на обработку персональных данных</span>
                                 </label>
                             </div>
@@ -820,15 +831,15 @@
                         </div>
                         <ul class="tabs d-flex flex-wrap pl-0 justify-content-between">
                             <li class="tab tab--active result__tab" data-tab="3-4-years-result">
-                                <img src="img/result/tab-1.png" data-tab="3-4-years-result" alt="3-4 года" class="result__img">
+                                <img src="img/result/tab-1.png" data-tab="3-4-years-result" alt="3-4 года" class="result__img lazy">
                                 <h3 class="result__name" data-tab="3-4-years-result">3-4 года</h3>
                             </li>
                             <li class="tab result__tab" data-tab="4-5-years-result">
-                                <img src="img/result/tab-2.png" data-tab="4-5-years-result" alt="4-5 лет" class="result__img">
+                                <img src="img/result/tab-2.png" data-tab="4-5-years-result" alt="4-5 лет" class="result__img lazy">
                                 <h3 class="result__name" data-tab="4-5-years-result">4-5 лет</h3>
                             </li>
                             <li class="tab result__tab" data-tab="5-6-years-result">
-                                <img src="img/result/tab-3.png" data-tab="5-6-years-result" alt="5-6 лет" class="result__img">
+                                <img src="img/result/tab-3.png" data-tab="5-6-years-result" alt="5-6 лет" class="result__img lazy">
                                 <h3 class="result__name" data-tab="5-6-years-result">5-6 лет</h3>
                             </li>
                             <li class="tab result__tab" data-tab="preschool-result">
@@ -887,16 +898,25 @@
                                 </section>
                             </header>
                             <footer class="result__content-footer">
-                                <form action="" class="form result__form d-flex align-items-lg-end">
+                                <form action="" class="form result__form d-flex align-items-lg-end" method="POST">
                                     <div class="row">
                                         <div class="d-flex flex-column">
-                                            <input class="form__input form__input-dark" type="tel" name="tel" id="phone"
-                                                placeholder="+7 (000) 000-00-00">
+                                            <div class="form-messages">
+                                                <p
+                                                    class="form-message form-message--success">
+                                                    Заявка
+                                                    отправлена!</p>
+                                                <p
+                                                    class="form-message form-message--error">
+                                                    Ошибка!</p>
+                                            </div>
+                                            <input class="form__input form__input-dark" type="tel" name="tel" id="tel"
+                                                placeholder="+7 (000) 000-00-00" required>
                                             <input class="btn result__btn btn-dark" type="submit"
                                                     value="Консультация">
                                         </div>
                                         <label class="result__policy">
-                                            <input type="checkbox" name="policy" id="policy" checked>
+                                            <input type="checkbox" name="policy" id="policy" checked required>
                                             <span>Соглашаюсь на обработку персональных данных</span>
                                         </label>
                                     </div>
@@ -962,7 +982,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/logopedist/logoped-1.png" alt="" class="teachers__img">
+                                    <img src="img/logopedist/logoped-1.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -976,7 +996,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/teachers/teacher-1.png" alt="" class="teachers__img">
+                                    <img src="img/teachers/teacher-1.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -990,7 +1010,7 @@
                         <article class="teachers__item logoped__item d-flex m-0">
                             <header class="teachers__image teachers__image--withtext">
                                 <div class="teachers__round">
-                                    <img src="img/teachers/teacher-2.png" alt="" class="teachers__img">
+                                    <img src="img/teachers/teacher-2.png" alt="" class="teachers__img lazy">
                                 </div>
                             </header>
                             <footer class="teachers__descr">
@@ -1010,16 +1030,23 @@
                     </div>
                     <form action="" class="form__inline logoped__form form--dashed">
                         <h3 class="title-small form__title manual__title logoped__form-title">Записаться к логопеду на консультацию можно, оставив контакты в форме ниже</h3>
+                        <div class="form-messages">
+                            <p class="form-message form-message--success">
+                                Заявка
+                                отправлена!</p>
+                            <p class="form-message form-message--error">
+                                Ошибка!</p>
+                        </div>
                         <div class="row form-row align-items-center">
                             <div class="col-xl-4 col-12">
-                                <input type="tel" class="form__input form__input-dark logoped__input" id="logoped-tel" placeholder="+7 (000) 000-00-00">
+                                <input type="tel" class="form__input form__input-dark logoped__input" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                             </div>
                             <div class="col-xl-4 col-12">
                                 <input class="btn logoped__btn m-0" type="submit" value="Консультация 0 руб.">
                             </div>
                             <div class="col-xl-4 col-12">
                                 <label class="manual__policy logoped__policy">
-                                    <input type="checkbox" name="policy" id="policy" checked>
+                                    <input type="checkbox" name="policy" id="policy" checked required>
                                     <span>Соглашаюсь на обработку персональных данных</span>
                                 </label>
                             </div>
@@ -1153,7 +1180,7 @@
         </div>
     </section>
 </article>
-<article class="reviews">
+<article class="reviews" id="reviews">
     <section class="reviews__inner">
         <div class="container">
             <header class="reviews__header">
@@ -1268,7 +1295,7 @@
               </div>
            </div>
         </div>
-        <div class="footer__bottom">
+      <div class="footer__bottom">
          <div class="container">
                   <div class="row">
                      <div class="col-12">
@@ -1286,6 +1313,10 @@
    <div id="entry" class="popup popup-form">
       <form action="" class="form form-popup" method="POST">
          <h3 class="form-popup__title">Оставить заявку</h3>
+         <div class="form-messages">
+            <p class="form-message form-message--success">Заявка отправлена!</p>
+            <p class="form-message form-message--error">Ошибка!</p>
+         </div>
          <div class="row">
             <div class="col-12">
                <input type="tel" class="form__input form__input-dark w-100 form-popup__phone" id="popup-tel" placeholder="+7 (000) 000-00-00">
@@ -1308,12 +1339,16 @@
    <div id="review-form" class="popup popup-form popup-form--review">
       <form action="" class="form form-popup" method="POST">
          <h3 class="form-popup__title">Оставить отзыв</h3>
+         <div class="form-messages">
+            <p class="form-message form-message--success">Заявка отправлена!</p>
+            <p class="form-message form-message--error">Ошибка!</p>
+         </div>
          <div class="row">
             <div class="col-12">
-               <input type="text" class="form__input form__input-dark w-100 form-popup__phone" id="popup-name" placeholder="Имя">
+               <input type="text" class="form__input form__input-dark w-100 form-popup__phone" id="name" placeholder="Имя" required>
             </div>
             <div class="col-12">
-               <textarea class=" form__input-dark w-100 mb-4" name="review-text" id="" placeholder="Отзыв">
+               <textarea class="form__input-dark w-100 mb-4" name="review-text" id="review-text" placeholder="Отзыв" required>
 
                </textarea> 
             </div>
@@ -1322,7 +1357,7 @@
             </div>
             <div class="col-12">
                <label class="form-popup__label">
-                  <input type="checkbox" name="policy" id="policy" checked>
+                  <input type="checkbox" name="policy" id="policy" checked required>
                   Соглашаюсь на обработку персональных данных
               </label>
             </div>
@@ -1330,8 +1365,8 @@
       </form>
    </div>
  </div>
-
-    <script src="js/libs.min.js"></script>
-    <script src="js/all.min.js"></script>
+   <script src="js/libs.min.js"></script>  
+   <script src="js/lazyload.js"></script>
+   <script src="js/all.min.js"></script>
  </body>
  </html>

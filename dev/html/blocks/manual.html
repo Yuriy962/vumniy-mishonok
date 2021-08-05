@@ -14,6 +14,10 @@
                     <form class="manual__form form-bg-white manual__form" method="POST">
                         <h3 class="title-small form__title manual__title">Получите ознакомительный фрагмент учебника,
                             на удобный для вас мессенджер</h3>
+                        <div class="form-messages">
+                            <p class="form-message form-message--success">Заявка отправлена!</p>
+                            <p class="form-message form-message--error">Ошибка!</p>
+                        </div>
                         <div class="row form-row">
                             <div class="col-lg-4 col-md-6 d-flex flex-column">
                                 <select class="form__input form__select manual__select" name="age" id="age">
@@ -25,7 +29,7 @@
                                     value="Получить фрагмент">
                             </div>
                             <div class="col-lg-4 col-md-6 d-flex flex-column">
-                                <input class="form__input form__input-dark manual__phone" type="tel" name="tel" id="phone" placeholder="+7 (000) 000-00-00">
+                                <input class="form__input form__input-dark manual__phone" type="tel" name="tel" id="tel" placeholder="+7 (000) 000-00-00" required>
                             </div>
                             <div class="col-lg-4">
                                 <div class="d-flex flex-column">
@@ -48,7 +52,7 @@
                             </div>
                             <div class="col-12">
                                 <label class="manual__policy">
-                                    <input type="checkbox" name="policy" id="policy" checked>
+                                    <input type="checkbox" name="policy" id="policy" checked required>
                                     <span>Соглашаюсь на обработку персональных данных</span>
                                 </label>
                             </div>

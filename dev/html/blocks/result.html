@@ -14,15 +14,15 @@
                         </div>
                         <ul class="tabs d-flex flex-wrap pl-0 justify-content-between">
                             <li class="tab tab--active result__tab" data-tab="3-4-years-result">
-                                <img src="img/result/tab-1.png" data-tab="3-4-years-result" alt="3-4 года" class="result__img">
+                                <img src="img/result/tab-1.png" data-tab="3-4-years-result" alt="3-4 года" class="result__img lazy">
                                 <h3 class="result__name" data-tab="3-4-years-result">3-4 года</h3>
                             </li>
                             <li class="tab result__tab" data-tab="4-5-years-result">
-                                <img src="img/result/tab-2.png" data-tab="4-5-years-result" alt="4-5 лет" class="result__img">
+                                <img src="img/result/tab-2.png" data-tab="4-5-years-result" alt="4-5 лет" class="result__img lazy">
                                 <h3 class="result__name" data-tab="4-5-years-result">4-5 лет</h3>
                             </li>
                             <li class="tab result__tab" data-tab="5-6-years-result">
-                                <img src="img/result/tab-3.png" data-tab="5-6-years-result" alt="5-6 лет" class="result__img">
+                                <img src="img/result/tab-3.png" data-tab="5-6-years-result" alt="5-6 лет" class="result__img lazy">
                                 <h3 class="result__name" data-tab="5-6-years-result">5-6 лет</h3>
                             </li>
                             <li class="tab result__tab" data-tab="preschool-result">
@@ -81,16 +81,25 @@
                                 </section>
                             </header>
                             <footer class="result__content-footer">
-                                <form action="" class="form result__form d-flex align-items-lg-end">
+                                <form action="" class="form result__form d-flex align-items-lg-end" method="POST">
                                     <div class="row">
                                         <div class="d-flex flex-column">
-                                            <input class="form__input form__input-dark" type="tel" name="tel" id="phone"
-                                                placeholder="+7 (000) 000-00-00">
+                                            <div class="form-messages">
+                                                <p
+                                                    class="form-message form-message--success">
+                                                    Заявка
+                                                    отправлена!</p>
+                                                <p
+                                                    class="form-message form-message--error">
+                                                    Ошибка!</p>
+                                            </div>
+                                            <input class="form__input form__input-dark" type="tel" name="tel" id="tel"
+                                                placeholder="+7 (000) 000-00-00" required>
                                             <input class="btn result__btn btn-dark" type="submit"
                                                     value="Консультация">
                                         </div>
                                         <label class="result__policy">
-                                            <input type="checkbox" name="policy" id="policy" checked>
+                                            <input type="checkbox" name="policy" id="policy" checked required>
                                             <span>Соглашаюсь на обработку персональных данных</span>
                                         </label>
                                     </div>

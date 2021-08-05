@@ -4,6 +4,17 @@
     width: 100%;
     z-index: 5;
     background-color: transparent;
+    &.position-fixed{
+        background-color: #fff;
+        .header__logo{
+            max-width: 80px;
+            transition: max-width .3s;
+        }
+        .header__inner{
+            padding: 20px 0 15px;
+            transition: max-width .3s;
+        }
+    }
     &__logo{
         margin-top: -10px;
         max-width: 318px;
