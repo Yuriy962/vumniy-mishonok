@@ -11,7 +11,6 @@
             transition: max-width .3s;
         }
         .header__inner{
-            padding: 20px 0 15px;
             transition: max-width .3s;
         }
     }
@@ -74,6 +73,11 @@
 }
 @media (max-width: 768px){
     .header{
+        &.position-fixed {
+            .header__inner {
+                padding: 15px 0 15px;
+            }
+        }
         &__logo{
             margin-right: 15px;
         }
@@ -94,6 +98,11 @@
 }
 @media (max-width: 400px) {
     .header{
+        &.position-fixed{
+            .header__inner{
+                padding: 20px 0 15px;
+            }
+        }
         &__logo {
             max-width: 83px;
             margin-left: 5px;
