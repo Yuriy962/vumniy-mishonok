@@ -6,6 +6,7 @@
     background-color: transparent;
     &.position-fixed{
         background-color: #fff;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .4);
         .header__logo{
             max-width: 80px;
             transition: max-width .3s;
