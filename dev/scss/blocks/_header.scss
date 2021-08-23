@@ -4,6 +4,17 @@
     width: 100%;
     z-index: 5;
     background-color: transparent;
+    &.position-fixed{
+        background-color: #fff;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+        .header__logo{
+            max-width: 80px;
+            transition: max-width .3s;
+        }
+        .header__inner{
+            transition: max-width .3s;
+        }
+    }
     &__logo{
         margin-top: -10px;
         max-width: 318px;
@@ -63,6 +74,11 @@
 }
 @media (max-width: 768px){
     .header{
+        &.position-fixed {
+            .header__inner {
+                padding: 15px 0 15px;
+            }
+        }
         &__logo{
             margin-right: 15px;
         }
@@ -83,6 +99,11 @@
 }
 @media (max-width: 400px) {
     .header{
+        &.position-fixed{
+            .header__inner{
+                padding: 20px 0 15px;
+            }
+        }
         &__logo {
             max-width: 83px;
             margin-left: 5px;

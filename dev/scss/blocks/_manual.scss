@@ -25,6 +25,9 @@
         border-radius: 15px;
         padding: 47px 43px 50px;
         margin-top: 40px;
+        .form-messages{
+            bottom: 20px;
+        }
     }
     &__phone{
         width: 100%;

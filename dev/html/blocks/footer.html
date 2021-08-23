@@ -10,17 +10,17 @@
                      </div>
                      <div class="footer__links">
                         <div class="footer__links-item copyright">© Все права защищены</div>
-                        <div class="footer__links-item autor">Создание сайтов - <a href="https://seoprostor.ru/">SEO Простор</a></div>
+                        <div class="footer__links-item autor">Создание сайтов - <a href="https://seoprostor.ru/" target="_blank">SEO Простор</a></div>
                         <div class="footer__links-item policy"><a href="#policy">Политика конфиденциальности</a></div>
                      </div>
                      <a href="#entry" data-fancybox="" class="btn btn-callback footer__btn popup">
                         Заказать звонок
                     </a>
                     <div class="social d-flex">
-                       <a href="https://vk.com/" class="social__item">
+                       <!-- <a href="https://vk.com/" class="social__item">
                           <img src="icons/vk.png" alt="vk">
-                        </a>
-                       <a href="https://www.instagram.com/" class="social__item">
+                        </a> -->
+                       <a href="https://www.instagram.com/funny_mouse_club/" target="_blank" class="social__item">
                           <img src="icons/inst.png" alt="inst">
                         </a>
                     </div>
@@ -28,7 +28,7 @@
               </div>
            </div>
         </div>
-        <div class="footer__bottom">
+      <div class="footer__bottom">
          <div class="container">
                   <div class="row">
                      <div class="col-12">
@@ -46,6 +46,10 @@
    <div id="entry" class="popup popup-form">
       <form action="" class="form form-popup" method="POST">
          <h3 class="form-popup__title">Оставить заявку</h3>
+         <div class="form-messages">
+            <p class="form-message form-message--success">Заявка отправлена!</p>
+            <p class="form-message form-message--error">Ошибка!</p>
+         </div>
          <div class="row">
             <div class="col-12">
                <input type="tel" class="form__input form__input-dark w-100 form-popup__phone" id="popup-tel" placeholder="+7 (000) 000-00-00">
@@ -68,12 +72,16 @@
    <div id="review-form" class="popup popup-form popup-form--review">
       <form action="" class="form form-popup" method="POST">
          <h3 class="form-popup__title">Оставить отзыв</h3>
+         <div class="form-messages">
+            <p class="form-message form-message--success">Заявка отправлена!</p>
+            <p class="form-message form-message--error">Ошибка!</p>
+         </div>
          <div class="row">
             <div class="col-12">
-               <input type="text" class="form__input form__input-dark w-100 form-popup__phone" id="popup-name" placeholder="Имя">
+               <input type="text" class="form__input form__input-dark w-100 form-popup__phone" id="name" placeholder="Имя" required>
             </div>
             <div class="col-12">
-               <textarea class=" form__input-dark w-100 mb-4" name="review-text" id="" placeholder="Отзыв">
+               <textarea class="form__input-dark w-100 mb-4" name="review-text" id="review-text" placeholder="Отзыв" required>
 
                </textarea> 
             </div>
@@ -82,7 +90,7 @@
             </div>
             <div class="col-12">
                <label class="form-popup__label">
-                  <input type="checkbox" name="policy" id="policy" checked>
+                  <input type="checkbox" name="policy" id="policy" checked required>
                   Соглашаюсь на обработку персональных данных
               </label>
             </div>
@@ -90,8 +98,8 @@
       </form>
    </div>
  </div>
-
-    <script src="js/libs.min.js"></script>
-    <script src="js/all.min.js"></script>
+   <script src="js/libs.min.js"></script>  
+   <script src="js/lazyload.js"></script>
+   <script src="js/all.min.js"></script>
  </body>
  </html>

@@ -180,6 +180,7 @@ body{
 		font-size: 18px;
 		max-width: 100%;
 		border-bottom: 2px solid;
+		padding-top: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
 		padding-bottom: 10px;
@@ -250,6 +251,22 @@ body{
 			}
 		}
 	}
+	&-message{
+		display: none;
+		&--success{
+			color: #16a600;
+			text-shadow: 1px 1px 1px #16a600;
+		}
+		&--error{
+			color: #eb1338;
+			text-shadow: 1px 1px 1px #eb1338;
+		}
+	}
+}
+.form-messages {
+	position: relative;
+	font-size: 15px;
+	bottom: 20px;
 }
 
 @media (max-width: 1360px) {
@@ -433,21 +450,26 @@ body{
 	display: grid !important;
 }
 
-input,
-textarea{
+input{
 	border: none;
 	&::placeholder{
 		color: #6f92ca;
 	}
-	&:focus{
+	&:focus,
+	&:active{
 		border: none;
+		border-bottom: 1px solid #6f92ca;
 		outline: none;
 	}
 }
 textarea{
 	min-height: 100px;
-	border: 1px solid;
+	border: 1px solid #6f92ca;
 	border-radius: 5px;
+	&:focus,
+	&:active{
+		border: 1px solid #6f92ca;
+	}
 }
 button{
 	border: none;
