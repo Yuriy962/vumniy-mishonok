@@ -6,7 +6,7 @@
     overflow: hidden;
     &__content{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 53% 47%;
         align-items: center;
     }
     &__img{
@@ -56,6 +56,7 @@
             }
             &--right{
                 right: -140px;
+            
             }
         }
     }
